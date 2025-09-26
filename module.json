@@ -1,0 +1,23 @@
+{
+  "id": "fvtt-rest-api",
+  "title": "FVTT REST API",
+  "description": "Expose FoundryVTT world data through a simple RESTful API (GET/POST) with API key authentication.",
+  "authors": [
+    {
+      "name": "Slamon81",
+      "url": "https://krdp.ddns.net",
+      "flags": {}
+    }
+  ],
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12",
+    "maximum": "13"
+  },
+  "esmodules": [
+    "dist/main.js"
+  ],
+    "manifest": "https://github.com/darkbard81/fvtt-rest-api/releases/latest/download/module.json",
+    "download": "https://github.com/darkbard81/fvtt-rest-api/releases/download/0.1.0/module.zip"
+}

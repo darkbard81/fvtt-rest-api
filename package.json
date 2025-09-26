@@ -1,0 +1,16 @@
+{
+    "name": "fvtt-rest-api",
+    "version": "0.1.0",
+    "description": "A FoundryVTT module exposing a simple RESTful API",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "package:win": "npm run build || powershell -Command \"Compress-Archive -Path module.json,dist -DestinationPath module.zip -Force\"",
+        "package:linux": "npm run build && zip -r module.zip module.json dist"
+    },
+    "devDependencies": {
+        "@league-of-foundry-developers/foundry-vtt-types": "^13.346.0-beta.20250812191140",
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0"
+    }
+}
